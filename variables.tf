@@ -1,3 +1,11 @@
+### added to the cloudposse repo
+variable "snapshot_name" {
+  type        = string
+  description = "The name of a snapshot from which to restore data into the new node group. Changing the snapshot_name forces a new resource."
+  default     = ""
+}
+### end added to the cloudposse repo
+
 variable "use_existing_security_groups" {
   type        = bool
   description = "Flag to enable/disable creation of Security Group in the module. Set to `true` to disable Security Group creation and provide a list of existing security Group IDs in `existing_security_groups` to place the cluster into"
